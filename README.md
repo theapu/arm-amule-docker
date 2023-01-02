@@ -1,10 +1,11 @@
+Build docker image (Building will take few hours)
 
-cd arm-amule-docker
 ```
 export DOCKER_BUILDKIT=1
 docker buildx create --use
 docker build --platform linux/arm/v7 -t armv7-amule .
 docker build --platform linux/arm64 -t arm64-amule .
+cd arm-amule-docker
 ```
 Push images to dockerhub
 ```
